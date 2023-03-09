@@ -1,0 +1,24 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textDark,
+.textWhite {
+    font-size: calc(1.375rem + 1.5vw);
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+
+    .textDark,
+    .textWhite {
+        font-size: 2.5rem;
+    }
+}
+
+.textWhite {
+    margin-bottom: 0.5rem;
+}

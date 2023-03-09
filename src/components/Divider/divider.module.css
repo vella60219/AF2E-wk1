@@ -1,0 +1,18 @@
+.light,
+.dark {
+  box-sizing: border-box;
+  height: 0;
+  width: 250px;
+  border-width: 1px 0 0;
+  border-top: solid 5px;
+  margin: 1rem auto;
+  opacity: 0.7;
+}
+
+.light {
+  border-color: #fff;
+}
+
+.dark {
+  border-color: #2c3e50;
+}

@@ -1,18 +1,19 @@
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import Images from "../components/Images/Images";
-import Description from "../components/Description/Description";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Images from "../components/Images";
+import Description from "../components/Description";
 
 function Home({ user }) {
     return (
-        <div>
+        <div className="pagecontainer mainLayout" >
             <Header
+                className="layoutHeader"
                 img={user.avatar}
                 title={user.name}
                 slogan={user.slogan}
             />
 
-            <div>
+            <div className="layoutContent" >
                 <Images
                     images={user.images}
                 />
@@ -21,8 +22,7 @@ function Home({ user }) {
                 />
             </div>
 
-
-            <Footer />
+            <Footer className="layoutFooter" />
         </div>
     );
 }

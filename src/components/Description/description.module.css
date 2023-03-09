@@ -1,0 +1,28 @@
+.box {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
+}
+
+.layout {
+  background-color: #00979c;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .layout {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.content {
+  font-size: 1rem;
+  text-indent: 2rem;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

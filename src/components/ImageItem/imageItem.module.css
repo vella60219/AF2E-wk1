@@ -1,0 +1,22 @@
+.image {
+    position: relative;
+}
+
+.link {
+    display: block;
+}
+
+.style {
+    width: 100%;
+    display: block;
+}
+
+.title {
+    color: white;
+    right: calc(2rem - 12px);
+    font-size: 1rem;
+    bottom: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute;
+}

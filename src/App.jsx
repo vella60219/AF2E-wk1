@@ -1,13 +1,13 @@
 import Home from './pages/Home'
-// import './App.css'
+import 'antd/dist/reset.css'
+import './App.css'
 import user from "./json/users.json";
 
 
 function App() {
-
   return (
     <div className="App">
-      <Home 
+      <Home
         user={user[0]}
       />
     </div>
