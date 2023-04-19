@@ -1,16 +1,23 @@
 import Home from './pages/Home'
 import 'antd/dist/reset.css'
 import './App.css'
-import user from "./json/users.json";
+import { QueryClient, QueryClientProvider } from 'react-query';
+import users from "./json/users.json";
+import { feedImages } from './api';
 
+// feedImages();
+
+const queryClient = new QueryClient()
 
 function App() {
   return (
-    <div className="App">
-      <Home
-        user={user[0]}
-      />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <div className="App">
+        <Home
+          user={users[0]}
+        />
+      </div>
+    </QueryClientProvider>
   )
 }
 

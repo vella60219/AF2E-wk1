@@ -2,8 +2,14 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Images from "../components/Images";
 import Description from "../components/Description";
+import { useImages } from "../react-query";
 
-function Home({ user }) {
+
+function Home({user}) {
+    const { data, isLoading } = useImages();
+    const images = data || [];
+    // const user = users[0];
+    images.sort((a, b) => a.id - b.id);
     return (
         <div className="pagecontainer mainLayout" >
             <Header
@@ -15,7 +21,8 @@ function Home({ user }) {
 
             <div className="layoutContent" >
                 <Images
-                    images={user.images}
+                    images={images}
+                    isLoading={isLoading}
                 />
                 <Description
                     description={user.descriptions}

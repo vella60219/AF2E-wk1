@@ -3,7 +3,7 @@ import ImageItem from "../ImageItem";
 
 import styles from "./imageList.module.css"
 
-function ImageList({ images }) {
+function ImageList({ images, isLoading }) {
     return (
         <Row gutter={[24, 24]} className={styles.box} >
             {images.map(image => (
